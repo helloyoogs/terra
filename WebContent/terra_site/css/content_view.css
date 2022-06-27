@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.table_wrap{
+  width: 100%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+table{
+  width: 50%;
+border-top: 1px solid #d9d9d9;
+border-collapse: collapse;
+margin: 0 auto;
+color: #141414;
+}
+th, td {
+        border-bottom: 1px solid #d9d9d9;
+        padding: 20px 0 20px 0;
+        text-align: center;
+      }
+  .table_wrap input{
+        width: 95%;
+        height: 50px;
+      border: 1px solid #d9d9d9;
+      }
+
+.table_wrap h2{
+  width:94%;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px 0 40px 0px;
+  text-align: center;
+padding-left: 6%;
+}
+textarea{
+  width: 95%;
+    border: 1px solid #d9d9d9;
+}
+@media screen and (max-width:800px) {
+  table{
+    width:90%;
+  }
+
+  .table_wrap h2{
+    text-align: center;
+      margin: 0px 0px 40px 0px;
+  }
+
+}

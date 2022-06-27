@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+section {
+	width: 900px;
+	margin: 130px auto;
+}
+
+h1 {
+	padding: 10px 10px;
+	border-bottom: 1px solid #000;
+	font-size: 20px;
+}
+
+/*content1 start*/
+section content1 img{
+    width: 100%;
+}
+section .content1 {
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+	padding: 20px 20px;
+}
+
+section .content1 ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section .content1 ul{
+	margin-top: 30px;
+}
+section .content1 ul li {
+	line-height: 25px;
+    font-size: 16px;
+}
+
+section .content1 ul.c1 li:nth-child(2){
+font-size: 25px;
+    font-weight: bold;
+    color: #043763;
+    
+}
+section .content1 ul.c1 li:nth-child(3){
+font-size: 20px;
+    font-weight: bold;
+    color: #043763;
+    margin-bottom: 30px;
+    
+}
+section .content1 ul.c1 li:last-child{
+margin-top: 30px;
+    
+}
+section .content1 ul.c1 li span{
+font-size: 20px;
+    font-weight: bold;
+    color: #043763;
+    
+}
+section .content1 ul li span{
+font-size: 20px;
+    font-weight: bold;
+    color: #21a089;
+    
+}
+section .content1 ul li:first-child{
+font-size: 20px;
+    font-weight: bold;
+    
+}
+
+section .content1 ul li:nth-child(2) {
+	padding-top: 40px;
+}
+
+section .content1 ul li:first-child {
+	float: left;
+}
+
+/*content1 End*/
+
+
+@media screen and (max-width:1200px) {
+	section h1 {
+		text-align: center;
+		font-size: 17px;
+	}
+
+	section .content2 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:899px) {
+    section .content1 img{
+    width: 100%;
+} 
+    section .content1 ul{
+    width: 100%;
+}
+	section {
+		padding: 5px 10px;
+		width: 95%;
+	}
+
+section .content1 ul.c1 li:nth-child(2){
+font-size: 16px;
+    font-weight: bold;
+    color: #043763;
+    
+}
+section .content1 ul.c1 li:nth-child(3){
+font-size: 16px;
+    font-weight: bold;
+    color: #043763;
+    margin-bottom: 30px;
+    
+}
+section .content1 ul.c1 li:last-child{
+margin-top: 30px;
+    
+}
+section .content1 ul.c1 li span{
+font-size: 16px;
+    font-weight: bold;
+    color: #043763;
+    
+}
+section .content1 ul li span{
+font-size: 16px;
+    font-weight: bold;
+    color: #21a089;
+    
+}
+section .content1 ul li:first-child{
+font-size: 15px;
+    font-weight: bold;
+    
+}
+
+section .content1 ul li:nth-child(2) {
+	padding-top: 40px;
+}
+
+section .content1 ul li:first-child {
+	float: left;
+}
+section .content1 ul li {
+	line-height: 25px;
+    font-size: 13px;
+}
+
+}
+@media screen and (max-width:750px) {
+	section {
+		padding: 5px 10px;
+		width: 95%;
+	}
+
+section .content1 ul.c1 li:nth-child(2){
+font-size: 16px;
+    font-weight: bold;
+    color: #043763;
+    
+}
+section .content1 ul.c1 li:nth-child(3){
+font-size: 16px;
+    font-weight: bold;
+    color: #043763;
+    margin-bottom: 30px;
+    
+}
+section .content1 ul.c1 li:last-child{
+margin-top: 30px;
+    
+}
+section .content1 ul.c1 li span{
+font-size: 16px;
+    font-weight: bold;
+    color: #043763;
+    
+}
+section .content1 ul li span{
+font-size: 15px;
+    font-weight: bold;
+    color: #21a089;
+    
+}
+section .content1 ul li:first-child{
+font-size: 15px;
+    font-weight: bold;
+    
+}
+
+section .content1 ul li:nth-child(2) {
+	padding-top: 40px;
+}
+
+section .content1 ul li:first-child {
+	float: none;
+}
+section .content1 ul li {
+	line-height: 25px;
+    font-size: 13px;
+}
+}
+@media screen and (max-width:527px){
+section .content1 ul li {
+	line-height: 20px;
+	font-size: 11px;
+}
+
+section .content1 ul li:nth-child(2) {
+	padding-top: 20px;
+}
+    
+}
+

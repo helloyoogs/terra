@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.section-wrap {
+        background-color: #f1f1f1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.section {
+    margin: 0 auto;
+    width: 41%;
+    text-align: left;
+    padding: 30px 0px;
+}
+.section:last-of-type ul li{
+line-height: 2;
+}
+.section:last-of-type ul li:last-child{
+margin-bottom: 35px;
+}
+
+.section-wrap h3 {
+    font-weight: bold;
+    padding: 30px 0;
+    font-size: 30px;
+   text-align: left;
+}
+
+.section ul li {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.section ul li .progress {
+    width: 100%;
+}
+.section ul li #pro3{
+   margin-bottom: 35px;
+}
+
+.section span{
+width: 280px;
+    background-color: #3d2221;
+}
+.section span a{
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #3d2221;
+    background-color: #3d2221;
+    color: #fff;
+    padding: 1% 10.2%;
+}
+
+.section span a:hover {
+    color: #fff;
+    background-color: #82cdc0;
+    border: 1px solid #82cdc0;
+}
+
+/*.sub1 .section media start*/
+@media screen and (max-width:1920px) {
+    .section-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .section-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .section ul li {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .section {
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+    padding: 30px 0px;
+}
+@media screen and (max-width:768px) {
+    .section-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .section ul li {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .section {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    padding: 30px 0px;
+}
+}
+    @media screen and (max-width:500px) {
+    .section-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    .section ul li {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .section {
+    margin: 0 auto;
+    width: 94%;
+    text-align: left;
+    padding: 30px 0px;
+}
+}
+
+/*.sub1 .section media End*/

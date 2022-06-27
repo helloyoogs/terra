@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+h1 {
+    padding: 10px 10px;
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+section {
+    width: 1400px;
+    margin: 150px auto;
+}
+
+section div {
+    text-align: center;
+    font-size: 0;
+}
+
+section div img {
+    width: 446px;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width:1399px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section {
+        width: 98%;
+    }
+
+
+}
+
+@media screen and (max-width:915px) {
+    section {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    section div img {
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+    }
+}

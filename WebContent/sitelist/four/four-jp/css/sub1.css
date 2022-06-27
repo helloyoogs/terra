@@ -1,0 +1,295 @@
+@charset "utf-8";
+/*이미지와 텍스트 설정시작*/
+h1 {
+    padding: 10px 10px;
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+section {
+    width: 1000px;
+    margin: 140px auto;
+}
+
+.content1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .content1 img {
+    border: 1px solid #ccc;
+    width: 40%;
+    float: left;
+}
+
+section .content1 ul {
+    margin-left: 9%;
+    margin-top: 20px;
+    float: left;
+}
+
+section .content1 ul li {
+    font-size: 16px;
+    text-align: left;
+    line-height: 25px;
+}
+section .content1 ul li span{
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width:1038px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 10px;
+        float: left;
+    }
+
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:905px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 13px;
+    text-align: left;
+    line-height: 25px;
+}
+
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:905px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 11%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 13px;
+    text-align: left;
+    line-height: 25px;
+}
+
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:886px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 9%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 13px;
+    text-align: left;
+    line-height: 25px;
+}
+
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:843px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 15px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+}
+
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:736px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+    section .content1 img {
+    width: 40%;
+    float: left;
+}
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:691px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 12px;
+    text-align: left;
+    line-height: 17px;
+}
+    section .content1 img {
+    width: 39%;
+    float: left;
+}
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:638px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 10px;
+    text-align: left;
+    line-height: 14px;
+}
+    section .content1 img {
+    width: 36%;
+    float: left;
+}
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:542px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 3%;
+        margin-top: 10px;
+        float: left;
+    }
+section .content1 ul li {
+    font-size: 9px;
+    text-align: left;
+    line-height: 12px;
+}
+    section .content1 img {
+    width: 36%;
+    float: left;
+}
+    section {
+        width: 95%;
+    }
+}
+@media screen and (max-width:522px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    section .content1 ul {
+        margin-left: 0%;
+        margin-top: 0px;
+        float: none;
+        width: 100%;
+    }
+section .content1 ul li {
+    font-size: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+}
+    section .content1 img {
+    width: 100%;
+    float: none;
+        margin-bottom: 50px;
+}
+    section {
+        width: 90%;
+    }
+}
+/*이미지와 텍스트 설정끝*/
+/*프레임설정시작*/
+p iframe{
+    width: 100%;
+    margin-top: 40px;
+    height: 200px;
+}
+/*프레임설정끝*/

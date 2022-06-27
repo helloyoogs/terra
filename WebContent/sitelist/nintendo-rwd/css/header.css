@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+html, body{width: 100%; height: 100%;}
+body {
+    background-image: url(../bg/intro_slide05_bg__pc.png);
+    font-family: 'NotoSansKR-Black-Alphabetic', 'woff';
+    font-family: 'NotoSansKR-Black-Alphabetic', 'woff';
+}
+
+/*메인이미지사이즈영역*/
+.main-img {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*메인이미지사이즈*/
+.main-img img {
+    width: 100%;
+}
+
+/*body{background-color: blueviolet;}*/
+header {
+    z-index: 1000;
+    width: 1400px;
+    margin: 0 auto;
+    position: fixed;
+    padding: 0;
+}
+
+header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header nav li {
+    margin-left: 40px;
+    line-height: 33px;
+    margin: 25px;
+    margin-top: 10px;
+}
+header nav li:hover{
+cursor: pointer;
+}
+
+/*상점이미지조정*/
+header nav ul li:nth-child(1) {
+    float: right;
+    margin: 0;
+}
+
+header nav ul:nth-child(1) img {
+    width: 40px;
+    float: right;
+}
+
+/*햄버거조정*/
+.bar-btn {
+    cursor: pointer;
+    display: none;
+}
+
+header nav {
+    float: none;
+    position: fixed;
+    left: -100%;
+    width: 17%;
+    height: 100%;
+    background-color: #fe7c0a;
+    text-align: left;
+    transition: 0.5s;
+    color: #fff;
+    padding-left: 50px;
+}
+
+.bar-btn {
+    position: fixed;
+    left: 15px;
+    top: 10px;
+    z-index: 1000;
+    display: block;
+}
+
+.bar-btn div {
+    width: 30px;
+    height: 3px;
+    background-color: #fe7c0a;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/*    햄버거 버튼을 클릭했을 때 on이라는 클래스가 추가된다 x버튼 만들기: body안에 jq*/
+.on .bar1 {
+    transform: rotate(45deg) translate(0, 11px);
+    background-color: #fff;
+}
+
+.on .bar2 {
+    opacity: 0;
+}
+
+.on .bar3 {
+    transform: rotate(-45deg) translate(0, -11px);
+    background-color: #fff;
+}
+
+/*    햄버거 클릭 시 슬라이드*/
+.slide {
+    left: 0;
+}
+
+/*-----------------미디어 사이즈 조정----------------*/
+@media screen and (max-width:1220px){
+ nav.slide {
+        width: 30%;
+    }
+    .main-img{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:1024px){
+    nav.slide {
+        width: 30%;
+    }
+ header nav ul li {
+        font-size: 15px;
+    }
+    .main-img {
+    width: 100%;
+}
+}
+@media screen and (max-width:768px) {
+    nav.slide {
+        width: 45%;
+    }
+
+    header nav ul li {
+        font-size: 14px;
+    }
+    .main-img {
+    width: 100%;
+}
+}
+
+@media screen and (max-width:500px){
+    nav.slide {
+        width: 50%;
+    }
+
+    header nav ul li {
+        font-size: 14px;
+    }
+    .main-img {
+    width: 100%;
+        height: 250px;
+}
+}
+@media screen and (max-width:375px){
+    nav.slide {
+        width: 60%;
+    }
+
+    header nav ul li {
+        font-size: 14px;
+    }
+    .main-img {
+    width: 100%;
+      height: 180px;
+}
+}@media screen and (max-width:340px){
+    nav.slide {
+        width: 60%;
+    }
+
+    header nav ul li {
+        font-size: 14px;
+    }
+    .main-img {
+    width: 100%;
+      height: 160px;
+}
+}

@@ -1,0 +1,121 @@
+@charset "utf-8";
+section {
+	width: 900px;
+	margin: 130px auto;
+}
+section::after{
+content: "";
+    display: block;
+    clear: both;
+}
+
+h1 {
+	padding: 10px 10px;
+	border-bottom: 1px solid #000;
+	font-size: 20px;
+}
+section .content1{
+  position: relative;  
+    
+}
+section .content1 p{
+position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+}
+/*content1 start*/
+/*content2 start*/
+section .content2::after{
+content: "";
+    display: block;
+    clear: both;
+}
+.content2{
+    margin-top: 50px;
+    float: left;
+    line-height: 25px;
+}
+section .content2 div{
+float: left;
+}
+section .content2-1 ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+section .content2-2{
+margin-left: 50px;
+    margin-top: 20px;
+}
+section .content2-2 ul{
+    list-style: square;
+}
+/*content2 End*/
+/*content3 start*/
+.content3{
+    margin-top: 50px;
+float: right;
+    line-height: 25px;
+}
+section .content3::after{
+content: "";
+    display: block;
+    clear: both;
+}
+section .content3 div{
+float: left;
+}
+section .content3-1 ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+section .content3-2{
+margin-left: 50px;
+    margin-top: 20px;
+}
+section .content3-2 ul{
+    list-style: square;
+}
+/*content2 End*/
+
+@media screen and (max-width:1200px) {
+	section h1 {
+		text-align: center;
+		font-size: 17px;
+	}
+
+}
+
+@media screen and (max-width:899px) {
+	section {
+		padding: 5px 10px;
+		width: 95%;
+	}
+    section .content1{
+	width: 100%;
+	}   
+    section .content1 img{
+	width: 100%;
+	}
+    section .content2{
+        width: 45%;
+    } 
+    section .content3{
+        width: 45%;
+    }
+
+}
+@media screen and (max-width:500px){
+        section .content1 p{
+	font-size: 16px;
+	}  
+    	section .content2 {
+		width: 100%;
+	}
+    section .content3 {
+		width: 100%;
+	}
+}

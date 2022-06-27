@@ -1,0 +1,111 @@
+@charset "utf-8";
+/*비디오 설정시작*/
+.video {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video ul {
+    margin-top: 50px;
+}
+
+.video ul li {
+    width: 46%;
+    margin: 0 20px;
+    display: inline-block;
+}
+.video ul li img{
+    width: 100%;
+}
+.video ul li img:hover{
+    opacity: 0.7;
+}
+/*비디오설정 끝*/
+@media screen and (max-width:1220px){
+ .video {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+     font-size: 0;
+}
+
+.video ul {
+    margin-top: 50px;
+}
+
+.video ul li {
+    width: 42%;
+    margin: 0 20px;
+    display: inline-block;
+}
+.video ul li img{
+    width: 100%;
+}   
+}
+@media screen and (max-width:1024px){
+ .video {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+     font-size: 0;
+}
+
+.video ul {
+    margin-top: 50px;
+}
+
+.video ul li {
+    width: 42%;
+    margin: 0 20px;
+    display: inline-block;
+}
+.video ul li img{
+    width: 100%;
+}   
+}
+@media screen and (max-width:768px){
+ .video {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+     font-size: 0;
+}
+
+.video ul {
+    margin-top: 50px;
+}
+
+.video ul li {
+    width: 42%;
+    margin: 0 20px;
+    display: inline-block;
+}
+.video ul li img{
+    width: 100%;
+}   
+}
+@media screen and (min-width:0px) and (max-width:767px){
+ .video {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+     font-size: 0;
+}
+
+.video ul {
+    margin-top: 50px;
+}
+
+.video ul li {
+    width: 100%;
+    margin: 0 0px;
+display: block;
+}
+    .video ul li:first-child{
+margin-bottom: 50px;
+}
+.video ul li img{
+    width: 100%;
+}   
+}

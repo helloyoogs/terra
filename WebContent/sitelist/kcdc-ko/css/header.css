@@ -1,0 +1,313 @@
+@charset "utf-8";
+.skip {
+    position: absolute;
+    top: -50px;
+}
+@font-face {
+	font-family: "nexon1";
+	src: url("../font/NEXON Lv1 Gothic Low OTF Bold.woff")format("woff");
+}
+
+@font-face {
+	font-family: "nexon2";
+	src: url("../font/NEXON Lv1 Gothic Low OTF Light.woff")format("woff");
+}
+
+@font-face {
+	font-family: "nexon3";
+	src: url("../font/NEXON Lv1 Gothic Low OTF.woff")format("woff");
+}
+
+body {
+	font-family: "nexon3";
+}
+
+header {
+    background-color: #fff;
+  position: fixed;
+  top: 0;
+z-index: 1000000;
+  left: 0;
+  right: 0;
+}
+
+header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header .logo {
+    padding: 5px 5px;
+	margin-left: 95px;
+	float: left;
+}
+header .logo img{
+width: 170px;
+}
+
+/*header nav setting*/
+header nav {
+	border-bottom: 1px solid #ccc;
+	padding-top: 20px;
+	font-size: 0;
+	text-align: center;
+    margin: 0 auto;
+}
+header nav ul{
+width: 852px;
+    margin: 0 auto;
+}
+
+header nav ul li.nav-hover {
+	font-size: 16px;
+	display: inline-block;
+	position: relative;
+}
+header nav ul li.nav-hover a{
+    text-align: center;
+	padding: 10px 8px;
+	font-size: 16px;
+	width: 150px;
+	display: inline-block;
+	position: relative;
+}
+
+
+header nav .sub-nav {
+	z-index: 100;
+	font-size: 0;
+	line-height: 35px;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 57px;
+	right: 0;
+	left: 0;
+	height: 150px;
+	display: none;
+	background-color: #fff;
+}
+
+header nav .sub-nav ol {
+	margin-top: 25px;
+	font-size: 16px;
+	padding: 10px 10px;
+	text-align: center;
+	display: inline-block;
+}
+header nav .sub-nav ol li{
+	width: 150px;
+}
+header nav .sub-nav ol a{
+width: 150px;
+    padding: 0 37px;
+}
+
+header nav .sub-nav ol:first-child {
+	vertical-align: top;
+}
+
+/*header nav End*/
+/*header lang start*/
+header .lang ul li {
+	margin: 0px 10px;
+	display: inline-block;
+}
+
+header .lang {
+	margin-right: 100px;
+	margin-top: -26px;
+	float: right;
+	position: relative;
+}
+
+header .lang ul li::after {
+	content: " ";
+	position: absolute;
+	right: 41px;
+	top: 2px;
+	width: 1px;
+	height: 13px;
+	background-color: #000;
+
+}
+
+/*header lang End*/
+/*햄버거조정*/
+.bar-btn {
+	cursor: pointer;
+	position: fixed;
+	right: 25px;
+	top: 13px;
+	z-index: 10000;
+	display: none;
+}
+
+.bar-btn div {
+	width: 30px;
+	height: 3px;
+	background-color:#043763;
+	margin: 5px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+/*    햄버거 버튼을 클릭했을 때 on이라는 클래스가 추가된다 x버튼 만들기: body안에 jq*/
+header .mobile-nav {
+	padding-top: 100px;
+	width: 50%;
+	height: 900px;
+	position: fixed;
+	line-height: 50px;
+	z-index: 1000;
+	background-color: #043763;
+	text-align: center;
+	color: #fff;
+	right: -100%;
+	transition: 0.5s;
+}
+header .mobile-nav a{
+width: 100px;
+    padding: 0 10px;
+}
+
+header .mobile-nav .sub-mobile {
+	background-color: #ccc;
+	display: none;
+	font-size: 15px;
+	color: #043763;
+	font-weight: 600;
+}
+header .mobile-nav .sub-mobile a{
+width: 100px;
+    padding: 0 20px;
+}
+
+.on .bar1 {
+	transform: rotate(43deg) translate(0, 5px);
+	background-color: #fff;
+}
+
+.on .bar2 {
+	transform: rotate(-43deg) translate(0, -5px);
+	background-color: #fff;
+}
+
+/*    햄버거 클릭 시 슬라이드*/
+.slide {
+	right: 0  !important;
+}
+
+
+
+/*header End*/
+@media screen and (max-width:1500px) {
+	header .logo {
+		margin-left: 0px;
+                padding: 5px 5px;
+	}
+
+	header .lang {
+		margin-right: 0px;
+		margin-top: -26px;
+	}
+
+header nav .sub-nav {
+	z-index: 100;
+	font-size: 0;
+	line-height: 35px;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 57px;
+	right: 0;
+	left: 0;
+	height: 150px;
+	display: none;
+	background-color: #fff;
+}
+
+}
+
+@media screen and (max-width:1200px) {
+
+	header .logo {
+        padding: 5px 5px;
+	}
+
+	header .lang {
+		margin-right: 20px;
+		margin-top: -26px;
+	}
+
+	.bar-btn {
+		display: block;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .lang {
+		display: none;
+	}
+}
+
+@media screen and (max-width:500px) {
+
+	header img {
+		width: 150px;
+	}
+	header .lang {
+		margin-right: 20px;
+		margin-top: -26px;
+	}
+
+	.bar-btn {
+		display: block;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .lang {
+		display: none;
+	}
+
+header .mobile-nav {
+	padding-top: 100px;
+	width: 50%;
+	height: 900px;
+	position: fixed;
+	line-height: 50px;
+	background-color: #043763;
+	text-align: center;
+	color: #fff;
+	right: -100%;
+	transition: 0.5s;
+	font-size: 15px;
+}
+
+header .mobile-nav .sub-mobile {
+	background-color: #ccc;
+	display: none;
+	color: #043763;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+}
+header nav ul li:hover{
+color: #fff;	
+	background-color: #043763;
+}
+header .sub-nav ol li:hover{
+color:  #043763;	
+	background-color: #ccc;
+	font-weight: bold;
+}
+header .mobile-hover:hover{
+color: #043763;	
+	background-color: #fff;
+	font-weight: bold;
+}

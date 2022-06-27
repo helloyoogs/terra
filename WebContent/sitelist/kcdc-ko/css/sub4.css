@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+section {
+    width: 900px;
+    margin: 147px auto;
+}
+
+h1 {
+    padding: 10px 10px;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+}
+
+table {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+table tr td {
+    border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width:1200px) {
+    section h1 {
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:899px) {
+    section {
+        padding: 5px 10px;
+        width: 95%;
+    }
+
+    table {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 40px;
+        font-size: 13px;
+    }
+
+    table tr td {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media screen and (max-width:752px) {
+    section {
+        padding: 5px 10px;
+        width: 95%;
+    }
+
+    table {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 40px;
+        font-size: 11px;
+    }
+
+    table tr td {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media screen and (max-width:607px) {
+    section {
+        padding: 5px 10px;
+        width: 95%;
+    }
+
+    table {
+        width: 100%;
+        margin: 0 auto;
+     text-align: center;
+        line-height: 40px;
+        font-size: 11px;
+        table-layout: fixed;
+    }
+        table tr td {
+        border-bottom: 1px solid #ccc;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+    }   
+    table tbody tr td:first-of-type{
+width: 1%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    section {
+        padding: 5px 10px;
+        width: 95%;
+    }
+    table {
+        width: 100%;
+        margin: 0 auto;
+text-align: left;
+        line-height: 40px;
+        font-size: 11px;
+        table-layout: fixed;
+    }
+        table tr td {
+        border-bottom: 1px solid #ccc;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+    }   
+    table tbody tr td:first-of-type{
+width: 1%;
+    }
+
+}

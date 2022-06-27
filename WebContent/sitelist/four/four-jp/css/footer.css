@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer .footer-wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .footer-wrap {
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+footer .footer-wrap .footer-left {
+    float: left;
+    padding-top: 40px;
+    line-height: 30px;
+    width: 33%;
+}
+
+footer .footer-wrap .footer-left ul li span {
+    margin-left: 30px;
+}
+
+footer .footer-wrap .footer-center {
+    float: left;
+    width: 38%;
+    padding-top: 70px;
+    line-height: 30px;
+    text-align: center;
+}
+
+footer .footer-wrap .footer-right {
+    text-align: right;
+    float: right;
+    width: 29%;
+    padding-top: 80px;
+}
+
+footer .footer-wrap .footer-right select {
+    outline: inherit;
+    padding: 10px;
+    font-family: "nexon3";
+}
+
+/*footer End*/
+@media screen and (max-width:1420px){
+    footer{
+        width: 100%;
+    } 
+    footer .footer-wrap{
+        width: 98%;
+     font-size: 12px;
+    }    
+}
+@media screen and (max-width:1024px){
+    footer{
+        width: 100%;
+    } 
+    footer .footer-wrap{
+        width: 98%;
+     font-size: 12px;
+    }    
+    footer .footer-wrap .footer-left span{
+display: none;
+    }
+}
+@media screen and (max-width:768px){
+    footer{
+        width: 100%;
+    } 
+    footer .footer-wrap{
+        width: 98%;
+     font-size: 12px;
+    }    
+    footer .footer-wrap .footer-left span{
+display: none;
+    }
+    footer .footer-wrap .footer-right select{
+       width: 130px;
+    }
+}
+@media screen and (max-width:650px){
+    footer{
+        width: 100%;
+       height: 200px;
+    }    
+    footer .footer-wrap{
+        width: 98%;
+    }   
+    footer .footer-wrap .footer-center{
+        width: 98%;
+        font-size: 12px;
+    } 
+    footer .footer-wrap .footer-left{
+        width: 0;
+      display: none;
+        font-size: 0;
+    }
+    footer .footer-wrap .footer-right{
+        width: 0;
+     display: none;
+        font-size: 0;
+    }
+}

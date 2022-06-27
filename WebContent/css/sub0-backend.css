@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.section-wrap {
+        background-color: #f1f1f1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.section-wrap h3 {
+    font-weight: bold;
+    padding: 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section ul li{
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
+.section img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.section ul li {
+    line-height: 35px;
+}
+
+.section p {
+	display: inline-block;
+    line-height: 30px;
+    margin: 15px auto;
+    width: 140px;
+    border: 1px solid #3d2221;
+    background-color: #3d2221;
+    color: #fff;
+}
+
+.section p:hover {
+    color: #fff;
+    background-color: #82cdc0;
+    border: 1px solid #82cdc0;
+}
+
+/*colorchip setting*/
+.section ul li span.colorchip1:first-child {
+    color: #aaa;
+}
+
+.section ul li span.colorchip1:last-child {
+    color: #999;
+}
+
+.section ul li span.colorchip2:first-child {
+    color: #CCAD56;
+}
+
+.section ul li span.colorchip2:last-child {
+    color: #272829;
+}
+
+.section ul li span.colorchip3:first-child {
+    color: #62b9a3;
+}
+
+.section ul li span.colorchip3:last-child {
+    color: #fe7c0a;
+}
+
+.section ul li span.colorchip4:first-child {
+    color: #043763;
+}
+
+.section ul li span.colorchip4:last-child {
+    color: #ccc;
+}
+
+.section ul li span.colorchip5:first-child {
+    color: #d9edff;
+}
+
+.section ul li span.colorchip5:last-child {
+    color: #999;
+}
+
+.section ul li span.colorchip6:last-child {
+    color: #013624;
+}
+
+/*colorchip End*/
+/*.sub1 .section media start*/
+@media screen and (max-width:1920px) {
+    .section-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .section {
+        position: inherit;
+    }
+
+    .section ul li{
+        font-size: 13px;
+        font-weight: 600;
+        background-color: inherit;
+      width: 60%;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+@media screen and (max-width:450px) {
+    .section {
+        position: inherit;
+    }
+
+    .section ul li{
+        font-size: 11px;
+        font-weight: 600;
+      width: 90%;
+    }
+    .section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 0px 0px;
+}
+    .section-wrap h3 {
+    padding: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+}
+/*샤넬 비디오 설정*/
+.section video {
+  width: 50%;
+}
+/*.sub1 .section media End*/

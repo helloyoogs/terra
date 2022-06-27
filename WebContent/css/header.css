@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "gugi";
+    src: url("../font/Gugi-Regular.woff");  
+}
+@font-face {
+    font-family: "nexon";
+    src: url("../font/NEXON Lv1 Gothic Low OTF Light.woff");
+}
+
+/*header 시작*/
+body {
+    font-family: "nexon";
+}
+
+header {
+    font-family: "gugi";
+    z-index: 1000;
+    margin: 0 auto;
+    position: fixed;
+}
+
+header .logo {
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+}
+
+header .logo a {
+    padding-top: 8px;
+    width: 100px;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+}
+
+
+header nav li {
+    font-size: 20px;
+    margin-left: 40px;
+    line-height: 33px;
+    margin: 25px;
+    margin-top: 10px;
+}
+
+
+
+/*햄버거조정*/
+
+header nav {
+    top: 0;
+    float: none;
+    position: fixed;
+    right: -100%;
+    width: 17%;
+    height: 100%;
+    background-color: #3d2221;
+    text-align: left;
+    transition: 0.5s;
+    color: #fff;
+}
+
+header nav ul {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+}
+
+header nav ul li:hover {
+    list-style: square;
+    cursor: pointer;
+    color: #82cdc0;
+    font-size: 20px;
+}
+
+.bar-btn {
+    padding-top: 8px;
+    cursor: pointer;
+    position: fixed;
+    right: 25px;
+    top: 13px;
+    z-index: 1000;
+    display: block;
+}
+
+.bar-btn div {
+    width: 30px;
+    height: 3px;
+    background-color: #3d2221;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.bar-btn:hover div {
+    background-color: #82cdc0;
+}
+
+/*    햄버거 버튼을 클릭했을 때 on이라는 클래스가 추가된다 x버튼 만들기: body안에 jq*/
+.on .bar1 {
+    transform: rotate(43deg) translate(0, 5px);
+    background-color: #fff;
+}
+
+.on .bar2 {
+    transform: rotate(-43deg) translate(0, -5px);
+    background-color: #fff;
+}
+
+/*    햄버거 클릭 시 슬라이드*/
+.slide {
+    right: 0;
+}
+
+@media screen and (max-width:1920px) {
+    .nav {
+        padding-top: 25px;
+        width: 78%;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .nav ul li a {
+        display: inline-block;
+        padding: 0 35px;
+        font-size: 17px;
+    }
+
+    .sub-on {
+        background-color: #82cdc0;
+        color: #fff;  
+    }
+
+}
+
+@media screen and (max-width:1220px) {
+    header nav {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header nav {
+        width: 50%;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header h1 {
+        margin: 0 auto;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin-top: 23px;
+        font-size: 25px;
+    }
+
+    header h1 span {
+        color: #82cdc0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header nav {
+        width: 70%;
+    }
+
+    .logo {
+        width: 50px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(220, 220, 220, 0.8);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 200, 200, 1);
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    width: 10px;
+    height: 7px;
+    background-color: rgba(130, 205, 192, 0.49);
+}

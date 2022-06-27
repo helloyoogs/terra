@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.section-wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.section-wrap h3 {
+    font-weight: bold;
+    padding: 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section img {
+    width: 60%;
+}
+
+/*이미지안에 텍스트 넣기시작*/
+.section {
+    position: relative;
+}
+
+.section-txt {
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: #ededed;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:1515px) {
+    .section-txt {
+        font-size: 10px;
+        font-weight: 600;
+        top: 85%;
+        left: 75%;
+        width: 200px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:981px) {
+    .section-txt {
+        font-size: 10px;
+        font-weight: 600;
+        top: 85%;
+        left: 75%;
+        width: 190px;
+        padding: 13px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .section {
+        position: inherit;
+    }
+
+    .section-txt {
+        position: inherit;
+        font-size: 13px;
+        font-weight: 600;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        background-color: inherit;
+      width: 60%;
+      padding: 20px 0;
+        box-shadow: none;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+@media screen and (max-width:450px) {
+    .section {
+        position: inherit;
+    }
+
+    .section-txt {
+        position: inherit;
+        font-size: 11px;
+        font-weight: 600;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        background-color: inherit;
+      width: 90%;
+      padding: 0px 0;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+    .section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 0px 0px;
+}
+    .section-wrap h3 {
+    padding: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+}
+
+/*이미지안에 텍스트 넣기끝*/
+.section ul li {
+    line-height: 30px;
+}
+
+/*colorchip setting*/
+.section ul li span.colorchip1:first-child {
+    color: #7872f7;
+}
+
+.section ul li span.colorchip1:last-child {
+    color: #fecbdd;
+}
+
+.section ul li span.colorchip2:first-child {
+    color: #662d91;
+}
+
+.section ul li span.colorchip2:last-child {
+    color: #cb92c1;
+}
+
+.section ul li span.colorchip3:first-child {
+    color: #a9cbc1;
+}
+
+.section ul li span.colorchip3:last-child {
+    color: #89018d;
+}
+
+/*colorchip End*/
+/*.sub1 .section media start*/
+@media screen and (max-width:1920px) {
+    .section-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+}
+
+/*.sub1 .section media End*/

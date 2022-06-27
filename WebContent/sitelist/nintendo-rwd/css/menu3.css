@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*너굴로드 팝업만화 설정 */
+.window {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.nugool-wrap {
+    overflow-y: scroll;
+    width: 600px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 9999 !important;
+    border: 1px solid #88c9a1;
+    display: none;
+}
+
+.nugool {
+    width: 100%;
+}
+
+.nugool img {
+  width: 100%;
+}
+
+.nugool-wrap .close {
+    cursor: pointer;
+    padding-right: 10px;
+    width: 100px;
+    float: right;
+}
+
+.nugool-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*너굴로드 팝업만화 설정끝 */
+@media screen and (max-width:500px){
+    .nugool-wrap {
+    overflow-y: scroll;
+width: 80%;
+        height: 100%;
+}
+
+.nugool {
+    width: 100%;
+}
+
+.nugool img {
+  width: 100%;
+}
+
+.nugool-wrap .close {
+    cursor: pointer;
+    padding-right: 10px;
+    width: 100px;
+    float: right;
+}
+
+}
+
+
+
+/*너굴로드배경,화 설정시작*/
+.manga {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.manga map area {
+    outline: inherit;
+}
+
+.manga img {
+    width: 100%;
+}
+
+/*너굴로드배경,화 설정끝*/
+@media screen and (max-width:1220px) {
+    .manga {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .manga img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .manga {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .manga img {
+        width: 100%;
+    }
+}
+
+/*너굴로드 반응형 끝*/

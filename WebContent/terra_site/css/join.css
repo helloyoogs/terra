@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.form_wrap{
+  width: 100%;
+  margin-top: 200px;
+}
+
+.form_wrap .terra_join{
+  width: 540px;
+    margin: 200px auto;
+}
+
+
+.form_wrap .terra_join input{
+  width: 100%;
+  height: 50px;
+border: 1px solid #d9d9d9;
+margin-bottom: 10px;
+}
+.form_wrap .terra_join input[type=button]{
+  width: 80%;
+float: right;
+margin-right: -1.3%;
+}
+.form_wrap .terra_join h2{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px -85px 40px 0px;
+}
+
+.form_wrap .terra_join {
+  margin-top: 20px;
+  text-align: center;
+}
+#submitbtn{
+  cursor: pointer;
+}
+
+form::after{
+  clear: both;
+  content:"";
+  display: block;
+}
+@media screen and (max-width:800px) {
+  table{
+    width:90%;
+  }
+  .form_wrap .terra_join{
+    width: 100%;
+
+  }
+  .form_wrap .terra_join h2{
+    text-align: center;
+      margin: 0px 0px 40px 0px;
+  }
+  .form_wrap .terra_join input[type=button]{
+    width: 73.9%;
+    float: right;
+    margin-right: 9%;
+  }
+
+}
+@media screen and (max-width:800px) {
+
+  .form_wrap .terra_join input[type=button]{
+    width: 50%;
+    float: none;
+    margin-right: -75px;
+  }
+
+}

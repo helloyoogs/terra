@@ -1,0 +1,254 @@
+@charset "utf-8";
+/*------------------------상품정보 위 이미지배경-------------------------*/
+.housebg {
+    height: 223px;
+    width: 100%;
+}
+
+.housebg img {
+    width: 100%;
+}
+
+/*상품정보*/
+.info {
+    width: 100%;
+    height: 200px;
+    background-color: #ededed;
+}
+
+.info-wrap {
+    width: 1106px;
+    height: 200px;
+    background-color: #ededed;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+/*상품정보 안의 타이틀등*/
+.info-wrap .info1 ul li img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+.info-wrap .info1 ul {
+    padding-top: 30px;
+}
+
+.info-wrap .info1 ul li {
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/*상품정보  안의 로고2개*/
+.info-wrap .info2 ul {
+    padding-left: 50px;
+    text-align: center;
+    background-color: palegoldenrod;
+    height: 0;
+
+}
+
+.info-wrap .info2 ul li {
+    display: inline-block;
+    position: relative;
+    top: -120px;
+    padding-left: 10px;
+}
+
+.info-wrap .info2 ul li img {
+    height: 40px;
+}
+
+/*상품정보 안의 상품정보버튼*/
+.info-wrap .info3 {
+    float: right;
+    position: relative;
+    top: -120px;
+    padding-top: 15px;
+    font-size: 15px;
+    right: 240px;
+}
+
+.info-wrap .info3 div {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-20%);
+}
+
+.info-wrap .info3 div img {
+    width: 300px;
+}
+
+.info-wrap .info3 .info3-1 {
+    z-index: 10;
+}
+
+/*상품정보 안의 플레이 인원 수*/
+.info-wrap .info4 {
+    float: right;
+    position: relative;
+    top: -60px;
+    padding-top: 15px;
+    padding-right: 6%;
+    font-size: 15px;
+}
+
+.info-wrap .info4 img {
+    width: 4px;
+}
+
+/*--------------------반응형 집배경---------------*/
+@media screen and (max-width:786px) {
+    .housebg {
+        height: 10%;
+        width: 100%;
+    }
+
+    .housebg img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .housebg {
+        height: 10%;
+        width: 100%;
+    }
+
+    .housebg img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .housebg {
+        height: 10%;
+        width: 100%;
+    }
+
+    .housebg img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .housebg {
+        height: 0%;
+        width: 100%;
+    }
+
+    .housebg img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .housebg {
+        height: 0%;
+        width: 100%;
+    }
+
+    .housebg img {
+        width: 100%;
+    }
+}
+
+/*--------------------반응형 상품정보----------------------------*/
+@media screen and (max-width: 1024px) {
+    .info {
+        width: 100%;
+    }
+
+    .info-wrap {
+        width: 90%;
+        background-color: #ededed;
+    }
+
+    .info-wrap .info1 ul li {
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .info-wrap .info4 {
+        float: right;
+        position: relative;
+        top: -30px;
+        padding-top: 0px;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .info-wrap .info3 div img {
+        width: 250px;
+        margin-left: 20px;
+        padding-top: 30px;
+    }
+
+    .info-wrap .info2 ul li img {
+        height: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .info {
+        width: 100%;
+    }
+
+    .info-wrap {
+        width: 90%;
+        background-color: #ededed;
+    }
+
+    .info-wrap .info1 ul li {
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .info-wrap .info4 {
+        float: right;
+        position: relative;
+        top: -30px;
+        padding-top: 0px;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .info-wrap .info3 div img {
+        width: 250px;
+        margin-left: 20px;
+        padding-top: 30px;
+    }
+
+    .info-wrap .info2 ul li img {
+        height: 30px;
+    }
+}
+
+/*----------------------------------------500*/
+@media screen and (min-width:0px) and (max-width:767px) {
+    .info {
+   display: none;
+    }
+
+
+}
+
+/*----------------------------------------340*/
+@media screen and (max-width:340px) {
+    .info {
+        width: 100%;
+        display: none;
+    }
+
+}
+
+
+/*상품정보 호버*/
+.info-wrap .info3 .info3-1:hover img {
+    opacity: 0;
+}
